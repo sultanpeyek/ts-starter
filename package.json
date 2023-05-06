@@ -1,0 +1,26 @@
+{
+  "name": "gecko-assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx ./src/index.ts",
+    "lint:check": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:type": "tsc --noEmit",
+    "lint:format": "prettier --write \"src/**/*{ts,cjs,mjs,json}\" \"*.{ts,cjs,mjs,json}\"",
+    "lint:all": "pnpm run lint:check && pnpm run lint:type && pnpm run lint:format"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/eslint": "^8.37.0",
+    "@types/node": "^20.1.0",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.8",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  }
+}
